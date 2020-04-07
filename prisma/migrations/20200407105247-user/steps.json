@@ -21,7 +21,7 @@
         "source": "db"
       },
       "argument": "url",
-      "value": "env(\"DATABASE_URL\")"
+      "value": "\"file:./dev.db\""
     },
     {
       "tag": "CreateModel",
