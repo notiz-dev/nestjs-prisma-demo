@@ -22,7 +22,7 @@ export class AppController {
 
   @Get('users/:id')
   async user(@Param('id') id: string) {
-    return await this.prisma.user.findOne({ where: { id: +id } });
+    return await this.prisma.user.findUnique({ where: { id: +id } });
   }
 
   @Post('user')
